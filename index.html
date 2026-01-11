@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Traduction & Cours — PL ↔ FR</title>
+  <meta name="description" content="Traduction polonais ↔ français et cours personnalisés. Devis rapide, tarifs accessibles." />
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container header__inner">
+      <a class="brand" href="#top" aria-label="Retour en haut de page">
+<img 
+  src="logo.png"
+  alt="Logo Traduction et Cours polonais français"
+  class="brand__logo"
+/>
+        <span class="brand__text">Traduction & Cours</span>
+      </a>
+
+      <nav class="nav" aria-label="Navigation principale">
+        <a href="#services">Services</a>
+        <a href="#tarifs">Tarifs</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact" class="btn btn--small">Devis</a>
+      </nav>
+
+      <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="mobile-nav" id="mobileNav" aria-hidden="true">
+      <a href="#services">Services</a>
+      <a href="#tarifs">Tarifs</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact" class="btn">Demander un devis</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- Hero -->
+    <section class="hero">
+      <!-- Décor mystique (montagnes + sceau aigle) -->
+      <div class="hero-decor" aria-hidden="true">
+        <svg class="hero-mountains" viewBox="0 0 1200 420" preserveAspectRatio="none">
+          <path d="M0,340 L180,250 L300,290 L420,210 L560,275 L720,180 L860,240 L980,200 L1200,280 L1200,420 L0,420 Z"
+                fill="rgba(221,230,237,0.08)"/>
+          <path d="M0,360 L140,300 L260,330 L420,260 L560,320 L700,230 L860,300 L1010,260 L1200,320 L1200,420 L0,420 Z"
+                fill="rgba(157,178,191,0.10)"/>
+          <path d="M0,380 L160,340 L340,365 L520,320 L680,355 L860,300 L1020,340 L1200,330 L1200,420 L0,420 Z"
+                fill="rgba(82,109,130,0.18)"/>
+        </svg>
+
+        <div class="hero-seal">
+          <svg class="seal-eagle" viewBox="0 0 120 120">
+            <circle cx="60" cy="60" r="50" fill="none" stroke="rgba(221,230,237,0.25)" stroke-width="2"/>
+            <!-- Aigle minimaliste -->
+            <path d="M20 58 L44 48 L60 60 L76 48 L100 58 L82 62 L74 78 L60 70 L46 78 L38 62 Z"
+                  fill="rgba(221,230,237,0.18)"/>
+            <path d="M60 60 L60 88" stroke="rgba(221,230,237,0.25)" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+          <span class="seal-text">AIGLE • MONTAGNE</span>
+        </div>
+      </div>
+
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <p class="badge">Devis gratuit • Réponse rapide • Travail soigné</p>
+          <h1>Traduction polonais ↔ français<br/>et cours sur-mesure, simples et efficaces.</h1>
+          <p class="lead">
+            Pour tes démarches, ton boulot, ou ton apprentissage : je t’aide avec une approche claire,
+            accessible et professionnelle.
+          </p>
+
+          <div class="actions">
+            <a class="btn" href="#contact">Obtenir un devis</a>
+            <a class="btn btn--ghost" href="#services">Voir les services</a>
+          </div>
+
+          <div class="stats">
+            <div class="stat">
+              <strong>24h</strong>
+              <span>réponse</span>
+            </div>
+            <div class="stat">
+              <strong>1</strong>
+              <span>révision incluse</span>
+            </div>
+            <div class="stat">
+              <strong>100%</strong>
+              <span>confidentiel</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__card" role="region" aria-label="Résumé des offres">
+          <h2>Offre de lancement</h2>
+          <p class="muted">Idéal pour démarrer : rapide, clair, sans prise de tête.</p>
+
+          <ul class="checklist">
+            <li>Traduction : documents perso & pro</li>
+            <li>Cours : polonais / français (selon ton choix)</li>
+            <li>Support : visio + exercices pratiques</li>
+          </ul>
+
+          <a class="btn btn--full" href="#contact">Je me lance →</a>
+          <p class="tiny muted">
+            Tu peux aussi me contacter par email :
+            <a href="mailto:contact@exemple.com">contact@exemple.com</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section__head">
+          <h2>Services</h2>
+          <p class="muted">Une page simple, des offres claires.</p>
+        </div>
+
+        <div class="cards">
+          <article class="card">
+            <h3>Traduction PL ↔ FR</h3>
+            <p class="muted">
+              CV, lettres, démarches administratives, emails pros, pages web…
+              Je respecte la terminologie et le style.
+            </p>
+            <ul class="bullets">
+              <li>Devis rapide</li>
+              <li>Relecture</li>
+              <li>Livraison propre (PDF/Word)</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Cours personnalisés</h3>
+            <p class="muted">
+              Objectifs : conversation, grammaire, vocabulaire utile.
+              Méthode progressive et concrète.
+            </p>
+            <ul class="bullets">
+              <li>Visio (ou présentiel si tu veux)</li>
+              <li>Exercices + suivi</li>
+              <li>Rythme adaptable</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Relecture & correction</h3>
+            <p class="muted">
+              Tu as déjà un texte ? Je corrige, j’améliore la fluidité et je propose des reformulations.
+            </p>
+            <ul class="bullets">
+              <li>Orthographe & style</li>
+              <li>Clarté</li>
+              <li>Version finale propre</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="how">
+          <h3>Comment ça marche</h3>
+          <ol class="steps">
+            <li><strong>Tu m’envoies</strong> ton besoin + ton fichier</li>
+            <li><strong>Je réponds</strong> avec devis + délai</li>
+            <li><strong>Je livre</strong> et on ajuste si nécessaire</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tarifs -->
+    <section class="section section--alt" id="tarifs">
+      <div class="container">
+        <div class="section__head">
+          <h2>Tarifs</h2>
+          <p class="muted">Affichage en fourchettes (tu peux modifier selon ta stratégie).</p>
+        </div>
+
+        <div class="pricing">
+          <div class="price">
+            <h3>Traduction</h3>
+            <p class="price__value">à partir de <strong>25€</strong></p>
+            <p class="muted tiny">Selon volume, complexité, délai.</p>
+            <ul class="checklist">
+              <li>Devis gratuit</li>
+              <li>1 révision incluse</li>
+              <li>Formats Word/PDF</li>
+            </ul>
+          </div>
+
+          <div class="price price--highlight">
+            <h3>Cours</h3>
+            <p class="price__value">à partir de <strong>20€</strong> / heure</p>
+            <p class="muted tiny">Pack possible (ex: 5h / 10h).</p>
+            <ul class="checklist">
+              <li>Objectifs définis ensemble</li>
+              <li>Exercices + supports</li>
+              <li>Suivi entre séances</li>
+            </ul>
+          </div>
+
+          <div class="price">
+            <h3>Relecture</h3>
+            <p class="price__value">à partir de <strong>15€</strong></p>
+            <p class="muted tiny">Selon longueur et niveau d’intervention.</p>
+            <ul class="checklist">
+              <li>Corrections</li>
+              <li>Amélioration du style</li>
+              <li>Suggestions claires</li>
+            </ul>
+          </div>
+        </div>
+
+        <p class="note">
+          💡 Astuce : au lancement, tu peux proposer une <strong>réduction -10%</strong> aux 5 premiers clients.
+        </p>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq">
+      <div class="container">
+        <div class="section__head">
+          <h2>FAQ</h2>
+          <p class="muted">Questions fréquentes.</p>
+        </div>
+
+        <div class="faq">
+          <details>
+            <summary>Quels formats acceptes-tu ?</summary>
+            <p>Word, PDF, texte, Google Docs. Tu peux aussi copier-coller.</p>
+          </details>
+          <details>
+            <summary>Quels sont les délais ?</summary>
+            <p>Ça dépend du volume. Je propose toujours un délai clair au moment du devis.</p>
+          </details>
+          <details>
+            <summary>Comment se passent les cours ?</summary>
+            <p>En visio (souvent). On définit un objectif, et je t’envoie exercices + corrections.</p>
+          </details>
+          <details>
+            <summary>Comment payer ?</summary>
+            <p>Virement (ou autre selon ton choix). Pour les gros volumes : acompte possible.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section section--alt" id="contact">
+      <div class="container contact">
+        <div class="contact__text">
+          <h2>Contact / Devis</h2>
+          <p class="muted">
+            Dis-moi ce dont tu as besoin (traduction ou cours). Je réponds vite avec une proposition claire.
+          </p>
+
+          <div class="contact__chips">
+            <span class="chip">📩 contact@exemple.com</span>
+            <span class="chip">📍 France / visio</span>
+            <span class="chip">🕒 Réponse sous 24h</span>
+          </div>
+        </div>
+
+        <form class="form" id="leadForm" novalidate>
+          <label>
+            Nom
+            <input type="text" name="name" autocomplete="name" placeholder="Ton nom" required minlength="2" />
+            <small class="error" data-error-for="name"></small>
+          </label>
+
+          <label>
+            Email
+            <input type="email" name="email" autocomplete="email" placeholder="ton@email.com" required />
+            <small class="error" data-error-for="email"></small>
+          </label>
+
+          <label>
+            Ton besoin
+            <select name="need" required>
+              <option value="">Choisir…</option>
+              <option>Traduction PL → FR</option>
+              <option>Traduction FR → PL</option>
+              <option>Cours de polonais</option>
+              <option>Cours de français</option>
+              <option>Relecture / correction</option>
+            </select>
+            <small class="error" data-error-for="need"></small>
+          </label>
+
+          <label>
+            Message
+            <textarea name="message" rows="5" placeholder="Décris ton besoin (volume, délai, objectif…)" required minlength="10"></textarea>
+            <small class="error" data-error-for="message"></small>
+          </label>
+
+          <button class="btn btn--full" type="submit">Envoyer</button>
+          <p class="tiny muted" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="tiny muted">© <span id="year"></span> — Traduction & Cours PL ↔ FR</p>
+      <div class="footer__links">
+        <a href="#top">Haut de page</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
