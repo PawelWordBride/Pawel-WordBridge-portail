@@ -39,10 +39,10 @@
     </div>
 
     <div class="mobile-nav" id="mobileNav" aria-hidden="true">
-      <a href="#services">Services</a>
-      <a href="#tarifs">Tarifs</a>
-      <a href="#faq">FAQ</a>
-      <a href="#contact" class="btn">Demander un devis</a>
+  <a href="#services" data-i18n="nav_services">Services</a>
+  <a href="#tarifs" data-i18n="nav_tarifs">Tarifs</a>
+    <a href="#faq" data-i18n="nav_faq">FAQ</a>
+<a href="#contact" class="btn btn--small" data-i18n="nav_devis">Devis</a>
     </div>
   </header>
 
@@ -275,13 +275,13 @@
         </div>
 
         <!-- ✅ Formspree activé -->
-<form
+  <form
   class="form"
   id="leadForm"
   action="https://formspree.io/f/mdaaobje"
   method="POST"
   novalidate
->
+  >
   <input type="hidden" name="_subject" value="Nouvelle demande depuis le site">
   <input type="hidden" name="_redirect" value="false">
 
@@ -318,7 +318,7 @@
 
   <button class="btn btn--full" type="submit" id="submitBtn">Envoyer</button>
   <p class="tiny muted" id="formStatus" role="status" aria-live="polite"></p>
-</form>
+  </form>
 
       </div>
     </section>
@@ -331,18 +331,18 @@
 
     <div class="socials">
 
-<div class="social-card">
+  <div class="social-card">
   <span class="social-icon">🎧</span>
   <span class="social-name">Discord</span>
   <span class="social-desc muted">Pseudo : pawelwordbridge</span>
-</div>
+  </div>
 
-<a
+  <a
   href="https://www.tiktok.com/@pawelwordbridge"
   class="social-card"
   target="_blank"
   rel="noopener"
->
+  >
   <span class="social-icon">
     <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
       <path
@@ -353,13 +353,13 @@
   </span>
   <span class="social-name">TikTok</span>
   <span class="social-desc muted">Mes vidéos</span>
-</a>
-<a
+  </a>
+  <a
   href="https://www.instagram.com/pawelwordbridge"
   class="social-card"
   target="_blank"
   rel="noopener"
->
+  >
   <span class="social-icon">
     <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
       <rect x="2" y="2" width="20" height="20" rx="6" ry="6" fill="none" stroke="currentColor" stroke-width="2"/>
@@ -369,10 +369,10 @@
   </span>
   <span class="social-name">Instagram</span>
   <span class="social-desc muted">Mes vidéos</span>
-</a>
+  </a>
     </div>
   </div>
-</section>
+  </section>
 
   </main>
 
@@ -388,4 +388,28 @@
 
   <script src="script.js" defer></script>
 </body>
+<!-- Language gate (overlay) -->
+<div class="lang-gate" id="langGate" aria-hidden="true">
+  <div class="lang-gate__card" role="dialog" aria-modal="true" aria-labelledby="langTitle">
+    <h2 id="langTitle">Choisissez la langue</h2>
+    <p class="muted">Choose your language • Wybierz język</p>
+
+    <div class="lang-gate__grid">
+      <button class="lang-btn" type="button" data-lang="fr" aria-label="Français">
+        🇫🇷 <span>Français</span>
+      </button>
+      <button class="lang-btn" type="button" data-lang="pl" aria-label="Polski">
+        🇵🇱 <span>Polski</span>
+      </button>
+      <button class="lang-btn" type="button" data-lang="en" aria-label="English">
+        🇬🇧 <span>English</span>
+      </button>
+    </div>
+
+    <p class="tiny muted" style="margin:12px 0 0;">
+      Votre choix sera mémorisé sur cet appareil.
+    </p>
+  </div>
+</div>
+
 </html>
