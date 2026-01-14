@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Traduction & Cours — PL ↔ FR</title>
-  <meta name="description" content="Traduction polonais ↔ français et cours personnalisés. Devis rapide, tarifs accessibles." />
+  <title data-i18n="page_title">Traduction & Cours — PL ↔ FR</title>
+  <meta name="description" content="Traduction polonais ↔ français et cours personnalisés. Devis rapide, tarifs accessibles." data-i18n-meta="meta_description" />
 
   <link rel="stylesheet" href="styles.css" />
 
@@ -17,32 +17,35 @@
   <!-- Header -->
   <header class="header">
     <div class="container header__inner">
-      <a class="brand" href="#top" aria-label="Retour en haut de page">
+      <a class="brand" href="#top" aria-label="Retour en haut de page" data-i18n-aria="brand_top">
         <img 
           src="logo.png"
           alt="Logo Traduction et Cours polonais français"
           class="brand__logo"
+          data-i18n-alt="brand_logo_alt"
         />
-        <span class="brand__text">Traduction & Cours</span>
+        <span class="brand__text" data-i18n="brand_text">Traduction & Cours</span>
       </a>
 
-      <nav class="nav" aria-label="Navigation principale">
-        <a href="#services">Services</a>
-        <a href="#tarifs">Tarifs</a>
-        <a href="#faq">FAQ</a>
-        <a href="#contact" class="btn btn--small">Devis</a>
+      <nav class="nav" aria-label="Navigation principale" data-i18n-aria="nav_main_aria">
+        <a href="#services" data-i18n="nav_services">Services</a>
+        <a href="#tarifs" data-i18n="nav_tarifs">Tarifs</a>
+        <a href="#faq" data-i18n="nav_faq">FAQ</a>
+        <a href="#contact" class="btn btn--small" data-i18n="nav_devis">Devis</a>
       </nav>
 
-      <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false">
-        <span></span><span></span><span></span>
+      <span class="lang-indicator" id="langIndicator" aria-label="Langue du site">FR</span>
+
+      <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false" data-i18n-aria="burger_open">
+        <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
       </button>
     </div>
 
     <div class="mobile-nav" id="mobileNav" aria-hidden="true">
-  <a href="#services" data-i18n="nav_services">Services</a>
-  <a href="#tarifs" data-i18n="nav_tarifs">Tarifs</a>
-    <a href="#faq" data-i18n="nav_faq">FAQ</a>
-<a href="#contact" class="btn btn--small" data-i18n="nav_devis">Devis</a>
+      <a href="#services" data-i18n="nav_services">Services</a>
+      <a href="#tarifs" data-i18n="nav_tarifs">Tarifs</a>
+      <a href="#faq" data-i18n="nav_faq">FAQ</a>
+      <a href="#contact" class="btn btn--small" data-i18n="nav_devis">Devis</a>
     </div>
   </header>
 
@@ -63,42 +66,46 @@
 
       <div class="container hero__grid">
         <div class="hero__content">
-          <p class="badge">Devis gratuit • Réponse rapide • Travail soigné</p>
-          <h1>Traduction polonais ↔ français<br/>et cours sur-mesure, simples et efficaces.</h1>
-          <p class="lead">
+          <p class="badge" data-i18n="hero_badge">Devis gratuit • Réponse rapide • Travail soigné</p>
+
+          <!-- On utilise data-i18n-html car il y a un <br/> -->
+          <h1 data-i18n-html="hero_title_html">
+            Traduction polonais ↔ français<br/>et cours sur-mesure, simples et efficaces.
+          </h1>
+
+          <p class="lead" data-i18n="hero_lead">
             Pour tes démarches, ton travail, ou ton apprentissage : je t’aide avec une approche claire,
             accessible et professionnelle.
           </p>
 
           <div class="actions">
-            <a class="btn" href="#contact">Obtenir un devis</a>
-            <a class="btn btn--ghost" href="#services">Voir les services</a>
+            <a class="btn" href="#contact" data-i18n="cta_quote">Obtenir un devis</a>
+            <a class="btn btn--ghost" href="#services" data-i18n="cta_services">Voir les services</a>
           </div>
 
           <div class="stats">
             <div class="stat">
               <strong>24h</strong>
-              <span>réponse</span>
+              <span data-i18n="stat_reply">réponse</span>
             </div>
             <div class="stat">
               <strong>100%</strong>
-              <span>confidentiel</span>
+              <span data-i18n="stat_confidential">confidentiel</span>
             </div>
           </div>
         </div>
 
-        <div class="hero__card" role="region" aria-label="Résumé des offres">
-          <h2>Résumé</h2>
-          <p class="muted">Traduction, cours et relecture : simple, clair, efficace.</p>
+        <div class="hero__card" role="region" aria-label="Résumé des offres" data-i18n-aria="hero_summary_aria">
+          <h2 data-i18n="hero_summary_title">Résumé</h2>
+          <p class="muted" data-i18n="hero_summary_text">Traduction, cours et relecture : simple, clair, efficace.</p>
 
           <ul class="checklist">
-            <li>Traduction : documents perso & pro</li>
-            <li>Cours : polonais / français (selon ton choix)</li>
-            <li>Support : visio + exercices pratiques</li>
+            <li data-i18n="hero_list_1">Traduction : documents perso & pro</li>
+            <li data-i18n="hero_list_2">Cours : polonais / français (selon ton choix)</li>
+            <li data-i18n="hero_list_3">Support : visio + exercices pratiques</li>
           </ul>
 
-          <a class="btn btn--full" href="#contact">Me contacter →</a>
-
+          <a class="btn btn--full" href="#contact" data-i18n-html="hero_contact_btn_html">Me contacter →</a>
         </div>
       </div>
     </section>
@@ -107,56 +114,57 @@
     <section class="section" id="services">
       <div class="container">
         <div class="section__head">
-          <h2>Services</h2>
-          <p class="muted">Une page simple, des offres claires</p>
+          <h2 data-i18n="services_title">Services</h2>
+          <p class="muted" data-i18n="services_subtitle">Une page simple, des offres claires</p>
         </div>
 
         <div class="cards">
           <article class="card">
-            <h3>Traduction PL ↔ FR</h3>
-            <p class="muted">
+            <h3 data-i18n="svc1_title">Traduction PL ↔ FR</h3>
+            <p class="muted" data-i18n="svc1_text">
               CV, lettres, démarches administratives, emails pros, pages web…
               Je respecte la terminologie et le style.
             </p>
             <ul class="bullets">
-              <li>Devis rapide</li>
-              <li>Relecture</li>
-              <li>Livraison propre (PDF/Word)</li>
+              <li data-i18n="svc1_b1">Devis rapide</li>
+              <li data-i18n="svc1_b2">Relecture</li>
+              <li data-i18n="svc1_b3">Livraison propre (PDF/Word)</li>
             </ul>
           </article>
 
           <article class="card">
-            <h3>Cours personnalisés</h3>
-            <p class="muted">
+            <h3 data-i18n="svc2_title">Cours personnalisés</h3>
+            <p class="muted" data-i18n="svc2_text">
               Objectifs : conversation, grammaire, vocabulaire utile.
               Méthode progressive et concrète.
             </p>
             <ul class="bullets">
-              <li>Visio / présentiel (selon distance du 78)</li>
-              <li>Exercices + suivi</li>
-              <li>Rythme adaptable</li>
+              <li data-i18n="svc2_b1">Visio / présentiel (selon distance du 78)</li>
+              <li data-i18n="svc2_b2">Exercices + suivi</li>
+              <li data-i18n="svc2_b3">Rythme adaptable
+              </li>
             </ul>
           </article>
 
           <article class="card">
-            <h3>Relecture & correction</h3>
-            <p class="muted">
+            <h3 data-i18n="svc3_title">Relecture & correction</h3>
+            <p class="muted" data-i18n="svc3_text">
               Tu as déjà un texte ? Je corrige, j’améliore la fluidité et je propose des reformulations.
             </p>
             <ul class="bullets">
-              <li>Orthographe & style</li>
-              <li>Clarté</li>
-              <li>Version finale propre</li>
+              <li data-i18n="svc3_b1">Orthographe & style</li>
+              <li data-i18n="svc3_b2">Clarté</li>
+              <li data-i18n="svc3_b3">Version finale propre</li>
             </ul>
           </article>
         </div>
 
         <div class="how">
-          <h3>Comment ça marche</h3>
+          <h3 data-i18n="how_title">Comment ça marche</h3>
           <ol class="steps">
-            <li><strong>Tu m’envoies</strong> ton besoin + ton fichier</li>
-            <li><strong>Je réponds</strong> avec devis + délai</li>
-            <li><strong>Je livre</strong> et on ajuste si nécessaire</li>
+            <li data-i18n-html="how_1_html"><strong>Tu m’envoies</strong> ton besoin + ton fichier</li>
+            <li data-i18n-html="how_2_html"><strong>Je réponds</strong> avec devis + délai</li>
+            <li data-i18n-html="how_3_html"><strong>Je livre</strong> et on ajuste si nécessaire</li>
           </ol>
         </div>
       </div>
@@ -166,48 +174,48 @@
     <section class="section section--alt" id="tarifs">
       <div class="container">
         <div class="section__head">
-          <h2>Tarifs</h2>
-          <p class="muted">Affichage en fourchettes de prix</p>
+          <h2 data-i18n="pricing_title">Tarifs</h2>
+          <p class="muted" data-i18n="pricing_subtitle">Affichage en fourchettes de prix</p>
         </div>
 
         <div class="pricing">
           <div class="price">
-            <h3>Traduction</h3>
-            <p class="price__value">à partir de <strong>10€</strong></p>
-            <p class="muted tiny">Selon volume, complexité, délai.</p>
+            <h3 data-i18n="p1_title">Traduction</h3>
+            <p class="price__value" data-i18n-html="p1_value_html">à partir de <strong>10€</strong></p>
+            <p class="muted tiny" data-i18n="p1_note">Selon volume, complexité, délai.</p>
             <ul class="checklist">
-              <li>Devis gratuit</li>
-              <li>1 révision incluse</li>
-              <li>Formats Word/PDF</li>
+              <li data-i18n="p1_b1">Devis gratuit</li>
+              <li data-i18n="p1_b2">1 révision incluse</li>
+              <li data-i18n="p1_b3">Formats Word/PDF</li>
             </ul>
           </div>
 
           <div class="price price--highlight">
-            <h3>Cours</h3>
-            <p class="price__value">à partir de <strong>20€</strong> / heure</p>
-            <p class="muted tiny">Packs personnalisés possibles (ex. 5 h / 10 h).</p>
+            <h3 data-i18n="p2_title">Cours</h3>
+            <p class="price__value" data-i18n-html="p2_value_html">à partir de <strong>20€</strong> / heure</p>
+            <p class="muted tiny" data-i18n="p2_note">Packs personnalisés possibles (ex. 5 h / 10 h).</p>
             <ul class="checklist">
-              <li>Objectifs définis ensemble</li>
-              <li>Exercices + supports</li>
-              <li>Suivi entre les séances</li>
-              <li><strong>Option conversation (messages) :</strong> correction continue <span class="muted">(+5 €)</span></li>
+              <li data-i18n="p2_b1">Objectifs définis ensemble</li>
+              <li data-i18n="p2_b2">Exercices + supports</li>
+              <li data-i18n="p2_b3">Suivi entre les séances</li>
+              <li data-i18n-html="p2_b4_html"><strong>Option conversation (messages) :</strong> correction continue <span class="muted">(+5 €)</span></li>
             </ul>
           </div>
 
           <div class="price">
-            <h3>Relecture</h3>
-            <p class="price__value">à partir de <strong>10€</strong></p>
-            <p class="muted tiny">Selon longueur et niveau d’intervention.</p>
+            <h3 data-i18n="p3_title">Relecture</h3>
+            <p class="price__value" data-i18n-html="p3_value_html">à partir de <strong>10€</strong></p>
+            <p class="muted tiny" data-i18n="p3_note">Selon longueur et niveau d’intervention.</p>
             <ul class="checklist">
-              <li>Corrections</li>
-              <li>Amélioration du style</li>
-              <li>Suggestions claires</li>
+              <li data-i18n="p3_b1">Corrections</li>
+              <li data-i18n="p3_b2">Amélioration du style</li>
+              <li data-i18n="p3_b3">Suggestions claires</li>
             </ul>
           </div>
         </div>
 
         <div class="benefit-wrap">
-          <p class="benefit-badge"><strong>-10%</strong> accordés sur la première prestation</p>
+          <p class="benefit-badge" data-i18n-html="benefit_html"><strong>-10%</strong> accordés sur la première prestation</p>
         </div>
       </div>
     </section>
@@ -216,38 +224,38 @@
     <section class="section" id="faq">
       <div class="container">
         <div class="section__head">
-          <h2>FAQ</h2>
-          <p class="muted">Questions fréquentes</p>
+          <h2 data-i18n="faq_title">FAQ</h2>
+          <p class="muted" data-i18n="faq_subtitle">Questions fréquentes</p>
         </div>
 
         <div class="faq">
           <details>
-            <summary>Quels formats acceptes-tu ?</summary>
-            <p>Word, PDF, texte, Google Docs.</p>
+            <summary data-i18n="faq_q1">Quels formats acceptes-tu ?</summary>
+            <p data-i18n="faq_a1">Word, PDF, texte, Google Docs.</p>
           </details>
 
           <details>
-            <summary>Quels sont les délais ?</summary>
-            <p>Ça dépend du volume. Je propose toujours un délai clair au moment du devis.</p>
+            <summary data-i18n="faq_q2">Quels sont les délais ?</summary>
+            <p data-i18n="faq_a2">Ça dépend du volume. Je propose toujours un délai clair au moment du devis.</p>
           </details>
 
           <details>
-            <summary>Comment se passent les cours ?</summary>
-            <p>
+            <summary data-i18n="faq_q3">Comment se passent les cours ?</summary>
+            <p data-i18n-html="faq_a3_html">
               Les cours se déroulent en visio ou en présentiel (selon la distance, secteur 78),
               via <strong>Discord</strong> ou <strong>WhatsApp</strong>.
               Nous définissons ensemble un objectif clair, puis je propose des exercices personnalisés
               avec corrections détaillées.
             </p>
-            <p>
+            <p data-i18n-html="faq_a3b_html">
               <strong>Option conversation :</strong> échanges par messages avec correction continue,
               pour <strong>+5 €</strong>.
             </p>
           </details>
 
           <details>
-            <summary>Comment payer ?</summary>
-            <p>
+            <summary data-i18n="faq_q4">Comment payer ?</summary>
+            <p data-i18n="faq_a4">
               Le paiement s’effectue par virement bancaire (ou autre moyen, selon votre préférence).
               Pour les prestations de volume important, un acompte peut être demandé.
             </p>
@@ -260,156 +268,164 @@
     <section class="section section--alt" id="contact">
       <div class="container contact">
         <div class="contact__text">
-          <h2>Contact / Devis</h2>
-          <p class="muted">
+          <h2 data-i18n="contact_title">Contact / Devis</h2>
+          <p class="muted" data-i18n="contact_text">
             Dis-moi ce dont tu as besoin (traduction ou cours). Je réponds vite avec une proposition claire.
           </p>
 
           <div class="contact__chips">
-            <span class="chip">📍 France, yvelines / visio</span>
-            <span class="chip">🕒 Réponse sous 24h</span>
-  <span class="chip">
-    🎧 Discord : <strong>pawelwordbridge</strong>
-  </span>
+            <span class="chip" data-i18n="chip_location">📍 France, Yvelines / visio</span>
+            <span class="chip" data-i18n="chip_reply">🕒 Réponse sous 24h</span>
+            <span class="chip" data-i18n-html="chip_discord_html">🎧 Discord : <strong>pawelwordbridge</strong></span>
           </div>
         </div>
 
         <!-- ✅ Formspree activé -->
-  <form
-  class="form"
-  id="leadForm"
-  action="https://formspree.io/f/mdaaobje"
-  method="POST"
-  novalidate
-  >
-  <input type="hidden" name="_subject" value="Nouvelle demande depuis le site">
-  <input type="hidden" name="_redirect" value="false">
+        <form
+          class="form"
+          id="leadForm"
+          action="https://formspree.io/f/mdaaobje"
+          method="POST"
+          novalidate
+        >
+          <input type="hidden" name="_subject" value="Nouvelle demande depuis le site">
+          <input type="hidden" name="_redirect" value="false">
 
-  <label>
-    Nom
-    <input type="text" name="name" autocomplete="name" placeholder="Ton nom" required minlength="2" />
-    <small class="error" data-error-for="name"></small>
-  </label>
+<label>
+  <span data-i18n="form_name">Nom</span>
+  <input type="text" name="name" autocomplete="name"
+         placeholder="Ton nom" data-i18n-placeholder="form_name_ph"
+         required minlength="2" />
+  <small class="error" data-error-for="name"></small>
+</label>
 
-  <label>
-    Email
-    <input type="email" name="email" autocomplete="email" placeholder="ton@email.com" required />
-    <small class="error" data-error-for="email"></small>
-  </label>
+<label>
+  <span data-i18n="form_email">Email</span>
+  <input type="email" name="email" autocomplete="email"
+         placeholder="ton@email.com" data-i18n-placeholder="form_email_ph"
+         required />
+  <small class="error" data-error-for="email"></small>
+</label>
 
-  <label>
-    Ton besoin
-    <select name="need" required>
-      <option value="">Choisir…</option>
-      <option>Traduction PL → FR</option>
-      <option>Traduction FR → PL</option>
-      <option>Cours de polonais</option>
-      <option>Cours de français</option>
-      <option>Relecture / correction</option>
-    </select>
-    <small class="error" data-error-for="need"></small>
-  </label>
+<label>
+  <span data-i18n="form_need">Ton besoin</span>
+  <select name="need" required>
+    <option value="" data-i18n="need_choose">Choisir…</option>
+    <option value="t_pl_fr" data-i18n="need_t_pl_fr">Traduction PL → FR</option>
+    <option value="t_fr_pl" data-i18n="need_t_fr_pl">Traduction FR → PL</option>
+    <option value="course_pl" data-i18n="need_course_pl">Cours de polonais</option>
+    <option value="course_fr" data-i18n="need_course_fr">Cours de français</option>
+    <option value="proof" data-i18n="need_proof">Relecture / correction</option>
+  </select>
+  <small class="error" data-error-for="need"></small>
+</label>
 
-  <label>
-    Message
-    <textarea name="message" rows="5" placeholder="Décris ton besoin (volume, délai, objectif…)" required minlength="10"></textarea>
-    <small class="error" data-error-for="message"></small>
-  </label>
+<label>
+  <span data-i18n="form_msg">Message</span>
+  <textarea name="message" rows="5"
+            placeholder="Décris ton besoin (volume, délai, objectif…)"
+            data-i18n-placeholder="form_msg_ph"
+            required minlength="10"></textarea>
+  <small class="error" data-error-for="message"></small>
+</label>
 
-  <button class="btn btn--full" type="submit" id="submitBtn">Envoyer</button>
-  <p class="tiny muted" id="formStatus" role="status" aria-live="polite"></p>
-  </form>
+<button class="btn btn--full" type="submit" id="submitBtn" data-i18n="form_send">Envoyer</button>
 
+          <p class="tiny muted" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
       </div>
     </section>
+
     <section class="section" id="socials">
-  <div class="container">
-    <div class="section__head">
-      <h2>Réseaux sociaux</h2>
-      <p class="muted">Suivre mon activité et échanger</p>
-    </div>
+      <div class="container">
+        <div class="section__head">
+          <h2 data-i18n="socials_title">Réseaux sociaux</h2>
+          <p class="muted" data-i18n="socials_subtitle">Suivre mon activité et échanger</p>
+        </div>
 
-    <div class="socials">
+        <div class="socials">
+          <div class="social-card">
+            <span class="social-icon">🎧</span>
+            <span class="social-name">Discord</span>
+            <span class="social-desc muted" data-i18n="social_discord_desc">Pseudo : pawelwordbridge</span>
+          </div>
 
-  <div class="social-card">
-  <span class="social-icon">🎧</span>
-  <span class="social-name">Discord</span>
-  <span class="social-desc muted">Pseudo : pawelwordbridge</span>
-  </div>
+          <a
+            href="https://www.tiktok.com/@pawelwordbridge"
+            class="social-card"
+            target="_blank"
+            rel="noopener"
+            aria-label="TikTok"
+          >
+            <span class="social-icon">
+              <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+                <path
+                  d="M14.5 3.2c.7 1.7 2 3 3.7 3.7.6.2 1.2.4 1.8.4v2.7c-1.9 0-3.7-.6-5.2-1.7v6.3c0 3.1-2.5 5.6-5.6 5.6S3.6 17.7 3.6 14.6c0-3.1 2.5-5.6 5.6-5.6.3 0 .7 0 1 .1v2.9c-.3-.1-.6-.2-1-.2-1.6 0-2.8 1.3-2.8 2.8s1.3 2.8 2.8 2.8 2.8-1.3 2.8-2.8V3.2h2.5z"
+                  fill="currentColor"
+                />
+              </svg>
+            </span>
+            <span class="social-name">TikTok</span>
+            <span class="social-desc muted" data-i18n="social_tiktok_desc">Mes vidéos</span>
+          </a>
 
-  <a
-  href="https://www.tiktok.com/@pawelwordbridge"
-  class="social-card"
-  target="_blank"
-  rel="noopener"
-  >
-  <span class="social-icon">
-    <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
-      <path
-        d="M14.5 3.2c.7 1.7 2 3 3.7 3.7.6.2 1.2.4 1.8.4v2.7c-1.9 0-3.7-.6-5.2-1.7v6.3c0 3.1-2.5 5.6-5.6 5.6S3.6 17.7 3.6 14.6c0-3.1 2.5-5.6 5.6-5.6.3 0 .7 0 1 .1v2.9c-.3-.1-.6-.2-1-.2-1.6 0-2.8 1.3-2.8 2.8s1.3 2.8 2.8 2.8 2.8-1.3 2.8-2.8V3.2h2.5z"
-        fill="currentColor"
-      />
-    </svg>
-  </span>
-  <span class="social-name">TikTok</span>
-  <span class="social-desc muted">Mes vidéos</span>
-  </a>
-  <a
-  href="https://www.instagram.com/pawelwordbridge"
-  class="social-card"
-  target="_blank"
-  rel="noopener"
-  >
-  <span class="social-icon">
-    <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
-      <rect x="2" y="2" width="20" height="20" rx="6" ry="6" fill="none" stroke="currentColor" stroke-width="2"/>
-      <circle cx="12" cy="12" r="5" fill="none" stroke="currentColor" stroke-width="2"/>
-      <circle cx="17" cy="7" r="1.2" fill="currentColor"/>
-    </svg>
-  </span>
-  <span class="social-name">Instagram</span>
-  <span class="social-desc muted">Mes vidéos</span>
-  </a>
-    </div>
-  </div>
-  </section>
+          <a
+            href="https://www.instagram.com/pawelwordbridge"
+            class="social-card"
+            target="_blank"
+            rel="noopener"
+            aria-label="Instagram"
+          >
+            <span class="social-icon">
+              <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+                <rect x="2" y="2" width="20" height="20" rx="6" ry="6" fill="none" stroke="currentColor" stroke-width="2"/>
+                <circle cx="12" cy="12" r="5" fill="none" stroke="currentColor" stroke-width="2"/>
+                <circle cx="17" cy="7" r="1.2" fill="currentColor"/>
+              </svg>
+            </span>
+            <span class="social-name">Instagram</span>
+            <span class="social-desc muted" data-i18n="social_insta_desc">Mes vidéos</span>
+          </a>
+        </div>
+      </div>
+    </section>
 
   </main>
 
   <footer class="footer">
     <div class="container footer__inner">
-      <p class="tiny muted">© <span id="year"></span> — Traduction & Cours PL ↔ FR</p>
+      <p class="tiny muted" data-i18n-html="footer_copy_html">© <span id="year"></span> — Traduction & Cours PL ↔ FR</p>
       <div class="footer__links">
-        <a href="#top">Haut de page</a>
-        <a href="#contact">Contact</a>
+        <a href="#top" data-i18n="footer_top">Haut de page</a>
+        <a href="#contact" data-i18n="footer_contact">Contact</a>
       </div>
     </div>
   </footer>
 
+  <!-- Language gate (overlay) -->
+  <div class="lang-gate" id="langGate" aria-hidden="true">
+    <div class="lang-gate__card" role="dialog" aria-modal="true" aria-labelledby="langTitle">
+      <h2 id="langTitle" data-i18n="lang_title">Choisissez la langue</h2>
+      <p class="muted" data-i18n="lang_subtitle">Choose your language • Wybierz język</p>
+
+      <div class="lang-gate__grid">
+        <button class="lang-btn" type="button" data-lang="fr" aria-label="Français">
+          🇫🇷 <span>Français</span>
+        </button>
+        <button class="lang-btn" type="button" data-lang="pl" aria-label="Polski">
+          🇵🇱 <span>Polski</span>
+        </button>
+        <button class="lang-btn" type="button" data-lang="en" aria-label="English">
+          🇬🇧 <span>English</span>
+        </button>
+      </div>
+
+      <p class="tiny muted" style="margin:12px 0 0;" data-i18n="lang_note">
+        Votre choix sera mémorisé sur cet appareil.
+      </p>
+    </div>
+  </div>
+
   <script src="script.js" defer></script>
 </body>
-<!-- Language gate (overlay) -->
-<div class="lang-gate" id="langGate" aria-hidden="true">
-  <div class="lang-gate__card" role="dialog" aria-modal="true" aria-labelledby="langTitle">
-    <h2 id="langTitle">Choisissez la langue</h2>
-    <p class="muted">Choose your language • Wybierz język</p>
-
-    <div class="lang-gate__grid">
-      <button class="lang-btn" type="button" data-lang="fr" aria-label="Français">
-        🇫🇷 <span>Français</span>
-      </button>
-      <button class="lang-btn" type="button" data-lang="pl" aria-label="Polski">
-        🇵🇱 <span>Polski</span>
-      </button>
-      <button class="lang-btn" type="button" data-lang="en" aria-label="English">
-        🇬🇧 <span>English</span>
-      </button>
-    </div>
-
-    <p class="tiny muted" style="margin:12px 0 0;">
-      Votre choix sera mémorisé sur cet appareil.
-    </p>
-  </div>
-</div>
-
 </html>
