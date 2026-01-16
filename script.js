@@ -157,6 +157,10 @@ const I18N = {
     lang_title: "Choisissez la langue",
     lang_subtitle: "Choose your language • Wybierz język",
     lang_note: "Votre choix sera mémorisé sur cet appareil.",
+
+    free_session_info:
+  "Une séance d’évaluation gratuite (15 à 30 minutes) est proposée avant tout engagement, afin de définir votre niveau et de vous orienter vers le parcours le plus adapté.",
+
   },
 
   en: {
@@ -298,6 +302,10 @@ const I18N = {
     lang_title: "Choose a language",
     lang_subtitle: "Choose your language • Wybierz język",
     lang_note: "Your choice will be saved on this device.",
+
+    free_session_info:
+  "A free assessment session (15 to 30 minutes) is offered before any commitment, in order to evaluate your level and guide you toward the most suitable learning path.",
+
   },
 
   pl: {
@@ -443,6 +451,10 @@ const I18N = {
     lang_title: "Wybierz język",
     lang_subtitle: "Choose your language • Wybierz język",
     lang_note: "Twój wybór zostanie zapisany na tym urządzeniu.",
+
+    free_session_info:
+  "Bezpłatna sesja wstępna (15–30 minut) jest oferowana przed podjęciem zobowiązania, aby określić Twój poziom i zaproponować najbardziej odpowiednią ścieżkę nauki.",
+
   },
 };
 
