@@ -103,7 +103,7 @@ const I18N = {
     p3_b2: "Amélioration du style",
     p3_b3: "Suggestions claires",
 
-    benefit_html: "<strong>-10%</strong> accordés sur la première prestation",
+    benefit_html: "<strong>-25%</strong> accordés sur la première prestation",
 
     faq_title: "FAQ",
     faq_subtitle: "Questions fréquentes",
@@ -243,7 +243,7 @@ const I18N = {
     p3_b2: "Style improvement",
     p3_b3: "Clear suggestions",
 
-    benefit_html: "<strong>-10%</strong> on your first service",
+    benefit_html: "<strong>-25%</strong> on your first service",
 
     faq_title: "FAQ",
     faq_subtitle: "Common questions",
@@ -387,7 +387,7 @@ const I18N = {
     p3_b2: "Ulepszenie stylu",
     p3_b3: "Jasne sugestie",
 
-    benefit_html: "<strong>-10%</strong> na pierwszą usługę",
+    benefit_html: "<strong>-25%</strong> na pierwszą usługę",
 
     faq_title: "FAQ",
     faq_subtitle: "Najczęstsze pytania",
