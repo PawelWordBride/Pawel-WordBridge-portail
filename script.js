@@ -36,6 +36,8 @@ const I18N = {
       "Pour tes démarches, ton travail, ou ton apprentissage : je t’aide avec une approche claire, accessible et professionnelle.",
     cta_quote: "Obtenir un devis",
     cta_services: "Voir les services",
+    cta_book_free: "🎯 Réserver une séance d’évaluation gratuite (15–30 min)",
+
 
     stat_reply: "réponse",
     stat_confidential: "confidentiel",
@@ -178,6 +180,7 @@ const I18N = {
       "For your paperwork, work, or learning: I help with a clear, accessible, professional approach.",
     cta_quote: "Get a quote",
     cta_services: "See services",
+    cta_book_free: "🎯 Book a free assessment session (15–30 min)",
 
     stat_reply: "reply",
     stat_confidential: "confidential",
@@ -320,6 +323,7 @@ const I18N = {
       "Dokumenty, praca lub nauka: pomogę Ci w jasny, przystępny i profesjonalny sposób.",
     cta_quote: "Poproś o wycenę",
     cta_services: "Zobacz usługi",
+    cta_book_free: "🎯 Umów bezpłatną sesję wstępną (15–30 min)",
 
     stat_reply: "odpowiedź",
     stat_confidential: "poufne",

@@ -632,3 +632,12 @@ input:focus, select:focus, textarea:focus{
   background: rgba(221,230,237,.12);
   border-color: rgba(221,230,237,.30);
 }
+
+.btn--primary {
+  background: rgba(221,230,237,.16);
+  border-color: rgba(221,230,237,.40);
+}
+
+.btn--primary:hover {
+  background: rgba(221,230,237,.22);
+}
