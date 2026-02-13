@@ -384,7 +384,7 @@ const I18N = {
     p1_b3: "Formaty Word/PDF",
 
     p2_title: "Lekcje",
-    p2_value_html: "od <strong>20€</strong> / godz.",
+    p2_value_html: "od <strong>85 Zł</strong> / godz.",
     p2_note: "Możliwe pakiety (np. 5 h / 10 h).",
     p2_b1: "Cele ustalamy razem",
     p2_b2: "Ćwiczenia + materiały",
@@ -393,7 +393,7 @@ const I18N = {
       "<strong>Opcja konwersacji (wiadomości):</strong> stała korekta <span class=\"muted\">(+5 €)</span>",
 
     p3_title: "Korekta",
-    p3_value_html: "od <strong>10€</strong>",
+    p3_value_html: "od <strong>42 Zł</strong>",
     p3_note: "Zależy od długości i zakresu.",
     p3_b1: "Poprawki",
     p3_b2: "Ulepszenie stylu",
