@@ -36,7 +36,7 @@ const I18N = {
       "Pour tes démarches, ton travail, ou ton apprentissage : je t’aide avec une approche claire, accessible et professionnelle.",
     cta_quote: "Obtenir un devis",
     cta_services: "Voir les services",
-    cta_book_free: "🎯 Réserver une séance d’évaluation gratuite (15–30 min)",
+    cta_book_free: "🎯 Réserver une séance d’évaluation gratuite (30min - 1h)",
 
 
     stat_reply: "réponse",
@@ -159,7 +159,7 @@ const I18N = {
     lang_note: "Votre choix sera mémorisé sur cet appareil.",
 
     free_session_info:
-  "Une séance d’évaluation gratuite (15 à 30 minutes) est proposée avant tout engagement, afin de définir votre niveau et de vous orienter vers le parcours le plus adapté.",
+  "Une séance d’évaluation gratuite (30min - 1h) est proposée avant tout engagement, afin de définir votre niveau et de vous orienter vers le parcours le plus adapté.",
 
   },
 
@@ -184,7 +184,7 @@ const I18N = {
       "For your paperwork, work, or learning: I help with a clear, accessible, professional approach.",
     cta_quote: "Get a quote",
     cta_services: "See services",
-    cta_book_free: "🎯 Book a free assessment session (15–30 min)",
+    cta_book_free: "🎯 Book a free assessment session (30min - 1h)",
 
     stat_reply: "reply",
     stat_confidential: "confidential",
@@ -304,7 +304,7 @@ const I18N = {
     lang_note: "Your choice will be saved on this device.",
 
     free_session_info:
-  "A free assessment session (15 to 30 minutes) is offered before any commitment, in order to evaluate your level and guide you toward the most suitable learning path.",
+  "A free assessment session (30min - 1h) is offered before any commitment, in order to evaluate your level and guide you toward the most suitable learning path.",
 
   },
 
@@ -331,7 +331,7 @@ const I18N = {
       "Dokumenty, praca lub nauka: pomogę Ci w jasny, przystępny i profesjonalny sposób.",
     cta_quote: "Poproś o wycenę",
     cta_services: "Zobacz usługi",
-    cta_book_free: "🎯 Umów bezpłatną sesję wstępną (15–30 min)",
+    cta_book_free: "🎯 Umów bezpłatną sesję wstępną (30min - 1h)",
 
     stat_reply: "odpowiedź",
     stat_confidential: "poufne",
@@ -453,7 +453,7 @@ const I18N = {
     lang_note: "Twój wybór zostanie zapisany na tym urządzeniu.",
 
     free_session_info:
-  "Bezpłatna sesja wstępna (15–30 minut) jest oferowana przed podjęciem zobowiązania, aby określić Twój poziom i zaproponować najbardziej odpowiednią ścieżkę nauki.",
+  "Bezpłatna sesja wstępna (30min - 1h) jest oferowana przed podjęciem zobowiązania, aby określić Twój poziom i zaproponować najbardziej odpowiednią ścieżkę nauki.",
 
   },
 };
